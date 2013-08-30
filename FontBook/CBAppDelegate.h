@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class CBViewController;
+@class CBFontBookController;
 
 @interface CBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) CBViewController *viewController;
+@property (strong, nonatomic) CBFontBookController *viewController;
 
 @end

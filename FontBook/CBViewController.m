@@ -7,6 +7,7 @@
 //
 
 #import "CBViewController.h"
+#import "CBFontManager.h"
 
 @interface CBViewController ()
 
@@ -17,13 +18,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    __weak typeof(self) target = self;
+    [CBFontManager getFontsWithCompletionBlock:^(NSDictionary *fonts) {
+        [target setFonts:fonts];
+        
+        NSArray *fontFamilies = [target sortedArray:[fonts allKeys]];
+        [target setFontFamilies:fontFamilies];
+        
+        // Notity to do something
+        [target fontLoaded];
+    }];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - Accessor
+- (NSDictionary *)fonts
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return _fonts;
+}
+
+- (void)setFonts:(NSDictionary *)fonts
+{
+    _fonts = fonts;
+}
+
+- (NSArray *)fontFamilies
+{
+    return _fontFamilies;
+}
+
+- (void)setFontFamilies:(NSArray *)fontFamilies
+{
+    _fontFamilies = fontFamilies;
+}
+
+#pragma mark - 
+- (void)fontLoaded
+{
+    // Do nothing
+}
+
+- (NSArray *)sortedArray:(NSArray *)source
+{
+    return [source sortedArrayUsingComparator:^NSComparisonResult(NSString *str1, NSString *str2) {
+                return [str1 compare:str2];
+            }];
 }
 
 @end
