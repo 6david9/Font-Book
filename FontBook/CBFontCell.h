@@ -8,13 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define Padding         5.0
-#define Paddingx2       10.0
-
-#define TitleFontSize       [UIFont labelFontSize]
-#define TextFontSize        35.0
-#define TextLabelY          0
-
 @interface CBFontCell : UITableViewCell
 
 @property (strong, nonatomic) UILabel *fontNameLabel;

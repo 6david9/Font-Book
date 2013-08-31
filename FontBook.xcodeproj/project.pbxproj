@@ -65,6 +65,7 @@
 		086E8DF417D10D9B00535316 /* CBDownloadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDownloadingController.h; sourceTree = "<group>"; };
 		086E8DF517D10D9B00535316 /* CBDownloadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDownloadingController.m; sourceTree = "<group>"; };
 		086E8DF617D10D9B00535316 /* CBDownloadingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBDownloadingController.xib; sourceTree = "<group>"; };
+		08F8ECE117D175BB009ECE8F /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 				086E8DB017D0E08600535316 /* Model */,
 				086E8DBB17D0E0BE00535316 /* View */,
 				086E8D9117D0DC6F00535316 /* Supporting Files */,
+				08F8ECE117D175BB009ECE8F /* Global.h */,
 			);
 			path = FontBook;
 			sourceTree = "<group>";
