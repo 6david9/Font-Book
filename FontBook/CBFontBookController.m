@@ -8,6 +8,7 @@
 
 #import "CBFontBookController.h"
 #import "CBEditorController.h"
+#import "CBDownloadingController.h"
 #import "CBFontCell.h"
 
 @interface CBFontBookController ()
@@ -22,17 +23,29 @@
     
     // Title view
     UILabel *titleView = [CBFontBookDefault defaultTitleView];
-    titleView.text = @"Font book";
+    titleView.text = @"Font Book";
     [titleView sizeToFit];
     self.navigationItem.titleView = titleView;
+    
+    // Setting view
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+        initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize
+        target:self action:@selector(downloadingNewFonts)];
 
-    // Set default row height for cell
+    // Set default height for cell row
     [self.tableView setRowHeight:[CBFontCell defaultHeight]];
 }
 
 - (void)fontLoaded
 {
     [self.tableView reloadData];
+}
+
+- (void)downloadingNewFonts
+{
+    CBDownloadingController *downloadingController =
+        [[CBDownloadingController alloc] initWithNibName:@"CBDownloadingController" bundle:nil];
+    [self presentViewController:downloadingController animated:YES completion:nil];
 }
 
 #pragma mark - Table view datasource and delegate

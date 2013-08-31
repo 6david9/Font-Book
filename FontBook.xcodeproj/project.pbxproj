@@ -27,6 +27,8 @@
 		086E8DC317D0F50300535316 /* CBFontBookDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 086E8DC217D0F50300535316 /* CBFontBookDefault.m */; };
 		086E8DC517D0F8FD00535316 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086E8DC417D0F8FD00535316 /* icon@2x.png */; };
 		086E8DC717D0F90300535316 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 086E8DC617D0F90300535316 /* icon.png */; };
+		086E8DF717D10D9B00535316 /* CBDownloadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086E8DF517D10D9B00535316 /* CBDownloadingController.m */; };
+		086E8DF817D10D9B00535316 /* CBDownloadingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086E8DF617D10D9B00535316 /* CBDownloadingController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,9 @@
 		086E8DC217D0F50300535316 /* CBFontBookDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBFontBookDefault.m; sourceTree = "<group>"; };
 		086E8DC417D0F8FD00535316 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 		086E8DC617D0F90300535316 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		086E8DF417D10D9B00535316 /* CBDownloadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDownloadingController.h; sourceTree = "<group>"; };
+		086E8DF517D10D9B00535316 /* CBDownloadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDownloadingController.m; sourceTree = "<group>"; };
+		086E8DF617D10D9B00535316 /* CBDownloadingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBDownloadingController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +158,9 @@
 				086E8DBC17D0F11900535316 /* CBEditorController.h */,
 				086E8DBD17D0F11900535316 /* CBEditorController.m */,
 				086E8DBE17D0F11900535316 /* CBEditorController.xib */,
+				086E8DF417D10D9B00535316 /* CBDownloadingController.h */,
+				086E8DF517D10D9B00535316 /* CBDownloadingController.m */,
+				086E8DF617D10D9B00535316 /* CBDownloadingController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -237,6 +245,7 @@
 				086E8DC017D0F11900535316 /* CBEditorController.xib in Resources */,
 				086E8DC517D0F8FD00535316 /* icon@2x.png in Resources */,
 				086E8DC717D0F90300535316 /* icon.png in Resources */,
+				086E8DF817D10D9B00535316 /* CBDownloadingController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 				086E8DBA17D0E0BC00535316 /* CBFontCell.m in Sources */,
 				086E8DBF17D0F11900535316 /* CBEditorController.m in Sources */,
 				086E8DC317D0F50300535316 /* CBFontBookDefault.m in Sources */,
+				086E8DF717D10D9B00535316 /* CBDownloadingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
